@@ -1,0 +1,21 @@
+<h2>Información de la persona</h2>
+
+<dl>
+	<dt>Nombre</dt>
+	<dd><%= @person.nombre %></dd>
+
+	<dt>Apellido</dt>
+	<dd><%= @person.apellido %></dd>
+
+	<dt>Direccion</dt>
+	<dd><%= @person.direccion%></dd>
+
+  <dt>Correo</dt>
+	<dd><%= @person.correo %></dd>
+
+  <dt>Fecha de nacimiento</dt>
+	<dd><%= @person.f_nacimiento %></dd>
+</dl>
+
+<%= link_to 'Editar', edit_person_path(@person), class:'btn btn-primary' %>
+<%= link_to 'Atrás', people_path, class:'btn btn-secondary' %>

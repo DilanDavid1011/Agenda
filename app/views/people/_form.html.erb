@@ -1,0 +1,15 @@
+<%= simple_form_for(@person) do |f| %>
+    <%= f.input :nombre %>
+    <%= f.input :segundo_nombre %>
+    <%= f.input :apellido %>
+    <%= f.input :segundo_apellido %>
+    <%= f.input :direccion %>
+    <%= f.input :correo %>
+    <%= f.input :f_nacimiento,label:'Fecha de nacimiento' %>
+
+<div class="botones">
+    <%= f.button :submit, class:'btn btn-primary' %>
+    <%= link_to 'Atrás', people_path, class:'btn btn-secondary' %>
+</div>
+
+<% end %>
